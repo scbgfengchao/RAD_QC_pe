@@ -30,8 +30,9 @@
 ###	2) This pipeline works on the fq file with the id line (line 1 of each 4 lines) which is combined with two parts, the former one is shared by both PE reads, the latter one has difference between PE reads. And these two parts are splited by black (" ") or tab ("	"), sush as @HWI-D00524:51:C587MANXX:4:1101:3260:1957 1:N:0:AGCAGT" or "@HWI-D00524:51:C587MANXX:4:1101:3260:1957 2:N:0:AGCAGT". Otherwise, this pipeline maybe not suitable for your data, we will adjust the pipeline if you email us.
 ###	3) All the read1 or read2 in a fastq file used in this pipeline should have uniform length.
 ###
-###Output description:	$sample_1.fq and $sample_2.fq: the fq files after quality control.
-###	 	$sample_1.fq.q2030 and $sample_2.fq.q2030: the stats files with the infomation of read No., Q20 and Q30 values.
+###Output description:
+###	 $sample_1.fq and $sample_2.fq: the fq files after quality control.
+###	 $sample_1.fq.q2030 and $sample_2.fq.q2030: the stats files with the infomation of read No., Q20 and Q30 values.
 ###___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 ###
 
