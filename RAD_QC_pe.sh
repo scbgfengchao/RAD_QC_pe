@@ -18,12 +18,12 @@
 ###
 ###Preparation:	Put all the PE-end RAD-Seq (fq format), RAD_QC_pe.sh, RAD_QC_pe.pl and q2030.pl in the same folder. *Read1 (next to restriction site) should be named as $sample_raw.1.fq, the other one as $sample_raw.2.fq, e.g.: CZYX01-2_raw.1.fq, CZYX01-2_raw.2.fq.
 ###
-###Usage:	nohup sh RAD_QC_pe.sh $ThreadNumber $3'cohesive_end $Read1_len $Read2_len >$Log 2>&1 &	
+###Usage:	nohup sh RAD_QC_pe.sh $ThreadNumber $Read1_len $Read2_len $3'cohesive_end >$Log 2>&1 &	
 ###		$ThreadNumber: Max Thread can be used in this analysis.
 ###		$Read1_len: the length of read1 in fastq file, e.g. 100.
 ###		$Read2_len: the length of read2 in fastq file, e.g. 100.
-###		$Log: Record of output on the screen.
 ###		$3'cohesive_end: 3'end of restriction enzyme used in RAD-Seq, e.g. EcoR I (G'AATTC) was used in RAD-Seq, here print AATTC.
+###		$Log: Record of output on the screen.
 ###	E.g.: nohup sh RAD_QC_pe.sh 8 100 100 AATTC >Log.txt 2>&1 &	
 ###
 ###Note:	1) If your RAD data was sequenced in order Illumina system with Phred64, please open the file q2030.pl, and exchange the number "53" and "63" in the line 21 and 24 into "84" and "94", respectively.
